@@ -15,7 +15,7 @@ def get_last_points():
 
 @cache.cache_control(no_cache=True)
 @http.condition(last_modified_func=latest_update)
-@api_view(('GET',))
+@api_view(('GET', 'HEAD'))
 def last_points(request):
     q = get_last_points()
     return Response(q)
