@@ -1,6 +1,6 @@
 ### Q1 Solution
 
-- [x] Create a function that returns list of last points
+- [x] Create a function that returns a list of the last points
 
 I used select_related to prevent extra queries and used values() for the output type.
 You can look at the get_last_points function in solution/views.py. 
